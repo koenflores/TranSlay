@@ -1,0 +1,16 @@
+body {
+background: #196dff;
+text-align: center;
+}
+#main{
+width: 1000px;
+height: 600px;
+background: #ffab19;
+margin: 25px auto;
+border: solid 3px #ff3819;
+}
+h1{
+text-align: center;
+font-family: "Times New Roman";
+font: 24pt;
+color: #ffab19;
