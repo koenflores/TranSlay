@@ -296,7 +296,12 @@ def Game():
     
     p1 = GIFImage("p1.gif")
     
+    
+    bossTag = pygame.image.load('bosstag.png')
+    
     while True:
+        
+        
         
         
         #background = Background('Background2.png', [0,0])
@@ -313,7 +318,7 @@ def Game():
     
         window.fill(pygame.Color(225,225,225))
         background.render(window, (20, 0))
-        
+        window.blit(bossTag,(800,10))
         #archer.render(window, (30, 200))
         bossGif.render(window, (700, 200))
         #player.render(window, (80,150))
@@ -412,7 +417,7 @@ def Game():
         #print(player1.getHealth())
       
         #print(player2.getPercentHealth())
-        print(questionsRight)
+        
         
         if player1.getPercentHealth() <= 0 and player2.getPercentHealth() <= 0 and player3.getPercentHealth() <=0:
             GameOver()
